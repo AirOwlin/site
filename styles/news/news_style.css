@@ -1,0 +1,10 @@
+@media (max-width: 767px) {
+    .content {
+        padding: 345px 0px 0px 0px;
+    }
+}
+
+.shapka {
+    overflow: hidden;
+    display: flex;
+}

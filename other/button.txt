@@ -1,0 +1,18 @@
+.downloadBtn {
+    display: flex;
+    margin: 0 auto;
+    width: 300px;
+    height: 100px;
+    font-weight: 750;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    background: rgb(64,199,129);
+}
+
+.textDown {
+    text-align: center;
+    margin: auto;
+}
+
+<div><a href="https://github.com/AirOwlin/PhoneNotes/raw/main/Phone%20Notes.apk" class="downloadBtn"><p class="textDown">Скачать приложение</p></a></div>

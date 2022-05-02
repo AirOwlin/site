@@ -1,0 +1,30 @@
+.content {
+    padding: 80px 0px 0px 0px;
+}
+
+.container_page {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 25px;
+    background-color: #063060;
+    height: 500px;
+}
+
+.about_pr h1, .about_pr h2 {
+    color: #ffffff;
+    padding: 25px 0px;
+    text-align: left;
+}
+
+.about p {
+    color: #ffffff;
+    margin: 0px 10px 0px 0px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+@media (max-width: 767px) {
+    .content {
+        padding: 345px 0px 0px 0px;
+    }
+}
