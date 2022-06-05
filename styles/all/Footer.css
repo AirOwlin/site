@@ -15,7 +15,6 @@
 
 .logo_div {
     width: 100%;
-    align-items: center;
 }
 
 .d-flex {
@@ -109,7 +108,7 @@
 }
 
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
     .social_net {
         display: flex;
         height: 100%;
@@ -136,7 +135,7 @@
     
     .col {
         background-color: #063060;
-        padding-top: 25px;
+        padding: 15px 0px;
         width: 100%;
     }
     

@@ -5,20 +5,58 @@
 .container_page {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0px 0px 20px 25px;
+    padding: 0px 15px 20px 25px;
     background-color: #063060;
 }
 
-.about_pr h1, .about_pr h2 {
+.about_site {
+    margin-bottom: 100px;
+}
+.about_site h1 {
     color: #ffffff;
-    padding: 60px 0px 20px 0px;
+    padding: 25px 0px 20px 0px;
+}
+.about_site p {
+    color: #ffffff;
 }
 
-p {
+.about_products h1 {
     color: #ffffff;
-    margin: 0px 10px 0px 0px;
-    font-size: 18px;
-    line-height: 25px;
+}
+
+.products li {
+    background-color: #96cade;
+    padding: 15px;
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    border: 10px solid #fff;
+    border-radius: 5px;
+}
+
+.title {
+    color: white;
+    font-weight: bold;
+    padding: 10px 0px 15px 0px;
+    font-size: 28px;
+}
+
+.descr {
+    color: white;
+    font-size: 15px;
+}
+
+.pr_link {
+    background-color: rgb(114, 241, 140);
+    color: #47a92e;
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 15px;
 }
 
 @media (max-width: 767px) {
