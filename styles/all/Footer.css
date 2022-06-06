@@ -19,11 +19,12 @@
 
 .d-flex {
     display: flex;
-    padding: 10px 0px 10px 0px;
+    padding: 0px 0px 10px 0px;
 }
 
 .col {
     background-color: #063060;
+    padding-bottom: 5px;
     width: 25%;
 }
 

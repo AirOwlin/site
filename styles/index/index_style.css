@@ -5,62 +5,51 @@
 .container_page {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0px 15px 20px 25px;
+    padding: 25px 25px 25px 25px;
     background-color: #063060;
 }
 
 .about_site {
-    margin-bottom: 100px;
+    margin-bottom: 25px;
+    padding: 0px 25px 25px 0px;
+    background-color:#2d89a0;
 }
 .about_site h1 {
     color: #ffffff;
-    padding: 25px 0px 20px 0px;
+    padding: 25px 0px 15px 10px;
 }
 .about_site p {
     color: #ffffff;
+    padding-left: 25px;
 }
 
-.about_products h1 {
+.sections_site {
+    margin-bottom: 25px;
+    background-color:#2d89a0;
+}
+.sections_site h1 {
     color: #ffffff;
+    padding: 25px 0px 15px 10px;
 }
-
-.products li {
-    background-color: #96cade;
-    padding: 15px;
-    margin: 30px 0px;
-    display: flex;
-    flex-direction: column;
-    border: 10px solid #fff;
-    border-radius: 5px;
+.sect li h3 {
+    color: #ffffff;
+    padding: 5px 0px;
 }
-
-.title {
-    color: white;
-    font-weight: bold;
-    padding: 10px 0px 15px 0px;
-    font-size: 28px;
+.sect {
+    padding: 0px 100px 50px 25px;
+    list-style-type: none;
 }
-
-.descr {
-    color: white;
-    font-size: 15px;
-}
-
-.pr_link {
-    background-color: rgb(114, 241, 140);
-    color: #47a92e;
+.more {
     text-decoration: none;
-    font-size: 25px;
-    margin-top: 15px;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    border-radius: 10px;
-    padding: 15px;
+    color: rgb(30, 51, 81);
 }
 
 @media (max-width: 767px) {
     .content {
         padding: 345px 0px 0px 0px;
+    }
+
+    .sect li h3 {
+        padding: 7px 0px;
     }
 }
