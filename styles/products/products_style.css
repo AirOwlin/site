@@ -29,6 +29,23 @@
     border-radius: 5px;
 }
 
+.container_img_product {
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.container_img_product img {
+    width: 100%;
+    height: auto;
+}
+
+.title_a {
+    text-decoration: none;
+    width: fit-content;
+}
+
 .title {
     color: white;
     font-weight: bold;

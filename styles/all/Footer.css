@@ -18,7 +18,7 @@
 
 .d-flex {
     display: flex;
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 15px 0px;
     justify-content: space-between;
 }
 
@@ -53,7 +53,6 @@
 
 .social {
     display: flex;
-    padding-top: 10px;
 }
 
 .container_social {
@@ -133,12 +132,12 @@
     }
     
     .d-flex {
-        display: block;
+        flex-direction: column;
     }
     
     .col {
         background-color: #063060;
-        padding: 15px 0px;
+        margin: 10px 0px;
         width: 100%;
     }
     
