@@ -1,232 +1,276 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <!-- Yandex.Metrika counter -->
-        <script type="text/javascript" >
-            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+
+<head>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
             (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-            ym(89108542, "init", {
-                clickmap:true,
-                trackLinks:true,
-                accurateTrackBounce:true
-            });
-        </script>
-        <noscript>
-            <div>
-                <img src="https://mc.yandex.ru/watch/89108542" style="position:absolute; left:-9999px;" alt="" />
+        ym(89108542, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <noscript>
+        <div>
+            <img src="https://mc.yandex.ru/watch/89108542" style="position:absolute; left:-9999px;" alt="" />
+        </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <meta name="theme-color" content="#021831">
+
+    <link rel="icon" href="img/all/ava.png">
+
+    <link rel="stylesheet" href="styles/all/NavigationBar.css">
+    <link rel="stylesheet" href="styles/index/index_style.css">
+    <link rel="stylesheet" href="styles/all/Footer.css">
+
+    <title>Главная</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container_header">
+            <div class="header_body">
+                <a href="index.html" class="header_logo">
+                    <img src="img/all/ava.png">
+                </a>
+
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li>
+                            <a href="index.html" class="header_link">Главная</a>
+                        </li>
+                        <li>
+                            <a href="html/News.html" class="header_link">Новости</a>
+                        </li>
+                        <li>
+                            <a href="html/Products.html" class="header_link">Продукты</a>
+                        </li>
+                        <li>
+                            <a href="html/Contact.html" class="header_link">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="html/AboutUs.html" class="header_link">О разработчике</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </noscript>
-        <!-- /Yandex.Metrika counter -->
-        
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        </div>
+    </header>
 
-        <meta name="theme-color" content="#021831">
-        
-        <link rel="icon" href="img/all/ava.png">
-        
-        <link rel="stylesheet" href="styles/all/NavigationBar.css">
-        <link rel="stylesheet" href="styles/index/index_style.css">
-        <link rel="stylesheet" href="styles/all/Footer.css">
+    <div class="content">
+        <div class="container_page">
+            <p class="date_p">
+                <script>
+                    /* функция добавления ведущих нулей */
+                    /* (если число меньше десяти, перед числом добавляем ноль) */
+                    function zero_first_format(value) {
+                        if (value < 10) {
+                            value = '0' + value;
+                        }
+                        return value;
+                    }
 
-        <title>Главная</title>
-    </head>
+                    /* функция получения текущей даты и времени */
+                    function date_time() {
+                        var current_datetime = new Date();
+                        var day = zero_first_format(current_datetime.getDate());
+                        var month = zero_first_format(current_datetime.getMonth() + 1);
+                        var year = current_datetime.getFullYear();
 
-    <body>
-        <header class="header">
-            <div class="container_header">
-                <div class="header_body">
-                    <a href="index.html" class="header_logo">
-                        <img src="img/all/ava.png">
-                    </a>
+                        return day + "." + month + "." + year;
+                    }
 
-                    <nav class="header_menu">
-                        <ul class="header_list">
-                            <li>
-                                <a href="index.html" class="header_link">Главная</a>
-                            </li>
-                            <li>
-                                <a href="html/News.html" class="header_link">Новости</a>
-                            </li>
-                            <li>
-                                <a href="html/Products.html" class="header_link">Продукты</a>
-                            </li>
-                            <li>
-                                <a href="html/Contact.html" class="header_link">Контакты</a>
-                            </li>
-                            <li>
-                                <a href="html/AboutUs.html" class="header_link">О разработчике</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                    /*var options = {
+                        era: 'long',
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                        weekday: 'long',
+                        timezone: 'UTC',
+                        hour: 'numeric',
+                        minute: 'numeric',
+                        second: 'numeric'
+                    };
+
+                    /* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
+                    /*document.write(date_time() + " || " + new Date().toLocaleString("ru", options));*/
+
+                    document.write("Сегодня: " + date_time());
+                </script>
+            </p>
+            
+            <div class="about_site">
+                <h1>О сайте</h1>
+                <p>Разработчик: Air Owlin</p>
+                <p>Данный сайт является карточкой разработчика.</p>
             </div>
-        </header>
 
-        <div class="content">
-            <div class="container_page">
-                <div class="about_site">
-                    <h1>О сайте</h1>
-                    <p>Разработчик: Air Owlin</p>
-                    <p>Данный сайт является карточкой разработчика.</p>
-                </div>
+            <div class="sections_site">
+                <h1>Разделы</h1>
+                <ul class="sect">
+                    <li>
+                        <h3>Новости (<a class="more" href="html/News.html">подробнее</a>)</h3>
+                    </li>
+                    <li>
+                        <h3>Продукты (<a class="more" href="html/Products.html">подробнее</a>)</h3>
+                    </li>
+                    <li>
+                        <h3>Контакты (<a class="more" href="html/Contact.html">подробнее</a>)</h3>
+                    </li>
+                    <li>
+                        <h3>О разработчике (<a class="more" href="html/AboutUs.html">подробнее</a>)</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-                <div class="sections_site">
-                    <h1>Разделы</h1>
-                    <ul class="sect">
+    <footer class="footer">
+        <div class="container_footer">
+            <div class="logo_div">
+                <a href="">
+                    <img src="img/all/ava.png" width="80px" height="80px">
+                </a>
+            </div>
+
+            <div class="d-flex">
+                <div class="col">
+                    <h2>Информация</h2>
+                    <ul class="item_menu">
                         <li>
-                            <h3>Новости (<a class="more" href="html/News.html">подробнее</a>)</h3>
+                            <a href="" class="footer_link">Loading.....</a>
                         </li>
                         <li>
-                            <h3>Продукты (<a class="more" href="html/Products.html">подробнее</a>)</h3>
+                            <a href="" class="footer_link">Loading.....</a>
                         </li>
                         <li>
-                            <h3>Контакты (<a class="more" href="html/Contact.html">подробнее</a>)</h3>
+                            <a href="" class="footer_link">Loading.....</a>
                         </li>
                         <li>
-                            <h3>О разработчике (<a class="more" href="html/AboutUs.html">подробнее</a>)</h3>
+                            <a href="" class="footer_link">Loading.....</a>
                         </li>
                     </ul>
                 </div>
-            </div>        
-        </div>
 
-        <footer class="footer">
-            <div class="container_footer">
-                <div class="logo_div">
-                    <a href="">
-                        <img src="img/all/ava.png" width="80px" height="80px">
-                    </a>
+                <div class="col">
+                    <h2>Информация</h2>
+                    <ul class="item_menu">
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="d-flex">
-                    <div class="col">
-                        <h2>Информация</h2>
-                        <ul class="item_menu">
-                            <li>
-                                <a href="" class="footer_link">Link</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Link</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Link</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Link</a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="col">
-                        <h2>Информация</h2>
-                        <ul class="item_menu">
-                            <li>
-                                <a href="" class="footer_link">Link</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Link</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Link</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Link</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col">
-                        <h2>Информация</h2>
-                        <ul class="item_menu">
-                            <li>
-                                <a href="" class="footer_link">Link</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Link</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Link</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Link</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col">
-                        <h2>Информация</h2>
-                        <ul class="item_menu">
-                            <li>
-                                <a href="" class="footer_link">Link</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Link</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Link</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Link</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col">
+                    <h2>Информация</h2>
+                    <ul class="item_menu">
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="social">
-                    <div class="container_social">
-                        <ul class="social_net">
-                            <li>
-                                <a href="" class="social_link">
-                                    <img src="img/all/footer/VK.png" alt="Official VK group" width="35px" height="35px">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="social_link">
-                                    <img src="img/all/footer/Telegram.png" alt="Telegram" width="35px" height="35px">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="social_link">
-                                    <img src="img/all/footer/Instagram.png" alt="Instagram" width="35px" height="35px">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="social_link">
-                                    <img src="img/all/footer/Facebook.png" alt="Facebook" width="35px" height="35px">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="social_link">
-                                    <img src="img/all/footer/Github.png" alt="GitHub" width="35px" height="35px">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="social_link">
-                                    <img src="img/all/footer/Twitter.png" alt="Twitter" width="35px" height="35px">
-                                </a>
-                            </li>
-                        </ul>
-
-                        <ul class="social_copyrights">
-                            <li>
-                                <a href="">© 2022 Copyright Air Owlin</a>
-                            </li>
-                            <li>
-                                <a href="">All rights reserved</a>
-                            </li>
-                            <li>
-                                <a href="">Условия</a>
-                            </li>
-                            <li>
-                                <a href="">Политика конфедициальности</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col">
+                    <h2>Информация</h2>
+                    <ul class="item_menu">
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-    </body>
+
+            <div class="social">
+                <div class="container_social">
+                    <ul class="social_net">
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="img/all/footer/VK.png" alt="Official VK group" width="35px" height="35px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="img/all/footer/Telegram.png" alt="Telegram" width="35px" height="35px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="img/all/footer/Instagram.png" alt="Instagram" width="35px" height="35px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="img/all/footer/Facebook.png" alt="Facebook" width="35px" height="35px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="img/all/footer/Github.png" alt="GitHub" width="35px" height="35px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="img/all/footer/Twitter.png" alt="Twitter" width="35px" height="35px">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="social_copyrights">
+                        <li>
+                            <a href="">© 2022 Copyright Air Owlin</a>
+                        </li>
+                        <li>
+                            <a href="">All rights reserved</a>
+                        </li>
+                        <li>
+                            <a href="">Условия</a>
+                        </li>
+                        <li>
+                            <a href="">Политика конфедициальности</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
