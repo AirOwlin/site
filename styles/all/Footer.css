@@ -18,7 +18,7 @@
 
 .d-flex {
     display: flex;
-    padding: 0px 0px 15px 0px;
+    padding: 0px 0px 20px 0px;
     justify-content: space-between;
 }
 
@@ -133,6 +133,7 @@
     
     .d-flex {
         flex-direction: column;
+        padding: 0px 0px 10px 0px;
     }
     
     .col {
