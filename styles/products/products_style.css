@@ -38,8 +38,8 @@
 }
 
 .title_a img {
-    width: 80px;
-    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
     margin-right: 20px;
 }
 
@@ -115,22 +115,8 @@
         margin: 0px;
     }
 
-    .container_img_product {
-        justify-content: center;
-        align-content: center;
-        display: block;
-        width: 100%;
-        min-height: auto;
-        max-height: 150px;
-    }
-    
-    .container_img_product img {
-        max-width:100% !important;
-        height:auto;
-        display:block;
-    }
-
     .pr_link_android, .pr_link_ios, .pr_link_git {
         font-size: 20px;
+        margin: 0px 0px 0px 0px;
     }
 }
