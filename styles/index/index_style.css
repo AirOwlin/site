@@ -58,6 +58,14 @@
     color: rgb(108, 211, 240);
 }
 
+.viewPicture {
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color:#2d89a0;
+    border-radius: 10px;
+}
+
 @media (max-width: 767px) {
     .content {
         padding: 345px 0px 0px 0px;

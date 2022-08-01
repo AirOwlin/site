@@ -32,6 +32,7 @@
 
     <link rel="stylesheet" href="styles/all/NavigationBar.css">
     <link rel="stylesheet" href="styles/index/index_style.css">
+    <link rel="stylesheet" href="styles/index/FullPictures.css">
     <link rel="stylesheet" href="styles/all/Footer.css">
 
     <title>Главная</title>
@@ -118,8 +119,20 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="viewPicture">
+                <img id="ImgToOpen" src="img/all/shapka.png" alt="Главная" width="100%" onclick="OpenFull(this)">
+            </div>
         </div>
     </div>
+
+    <!-- Область просмотра -->
+    <div class="AreaToView">
+        <span class="Cross">&times;</span>
+        <img class="ImgOpenned">
+        <div class="Description"></div>
+    </div>
+    <!--------------->
 
     <footer class="footer">
         <div class="container_footer">
@@ -262,5 +275,6 @@
         </div>
     </footer>
 </body>
-
+<!-- Скрипт в конце (чтобы сработал после прогрузки страницы)-->
+<script src="js/OpenFullPicture.js"></script>
 </html>
