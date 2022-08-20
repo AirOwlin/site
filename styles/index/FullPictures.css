@@ -32,7 +32,7 @@
     
     /* Fallback color */
     background-color: rgb(0, 0, 0);
-    /* Black w/ opacity */
+    /* Black opacity */
     background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -55,7 +55,7 @@
     height: 150px;
 }
 
-/* The Close Button */
+/* The Close (cross) button */
 .Cross {
     position: absolute;
     top: 15px;
@@ -73,7 +73,7 @@
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
+/* On phones */
 @media only screen and (max-width: 700px) {
     .ImgOpenned {
         width: 95%;
