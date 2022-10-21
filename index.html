@@ -38,13 +38,19 @@
     <title>Главная</title>
 </head>
 
-<body>
+<body class="body_st">
     <header class="header">
         <div class="container_header">
             <div class="header_body">
-                <a href="index.html" class="header_logo">
+                <a class="header_logo">
                     <img src="img/all/ava.png">
                 </a>
+
+                <div class="header_burger" onclick="OpenMenu()">
+                    <span class="r1"></span>
+                    <span class="r2"></span>
+                    <span class="r3"></span>
+                </div>
 
                 <nav class="header_menu">
                     <ul class="header_list">
@@ -68,6 +74,28 @@
             </div>
         </div>
     </header>
+
+    <!-- Область ссылок на телефоне -->
+    <div class="burger_menu">
+        <ul class="burger_list">
+            <li>
+                <a href="index.html" class="burger_link">Главная</a>
+            </li>
+            <li>
+                <a href="html/News.html" class="burger_link">Новости</a>
+            </li>
+            <li>
+                <a href="html/Products.html" class="burger_link">Продукты</a>
+            </li>
+            <li>
+                <a href="html/Contact.html" class="burger_link">Контакты</a>
+            </li>
+            <li>
+                <a href="html/AboutMe.html" class="burger_link">О разработчике</a>
+            </li>
+        </ul>
+    </div>
+    <!-------------------------------->
 
     <div class="content">
         <div class="container_page">
@@ -132,7 +160,7 @@
         <img class="ImgOpenned">
         <div class="Description"></div>
     </div>
-    <!--------------->
+    <!----------------------->
 
     <footer class="footer">
         <div class="container_footer">
@@ -277,4 +305,5 @@
 </body>
 <!-- Скрипт в конце (чтобы сработал после прогрузки страницы)-->
 <script src="js/OpenFullPicture.js"></script>
+<script src="js/OpenBurger.js"></script>
 </html>
