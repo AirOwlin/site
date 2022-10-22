@@ -1,218 +1,233 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Yandex.Metrika counter -->
-        <script type="text/javascript" >
-            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-            ym(89108542, "init", {
-                clickmap:true,
-                trackLinks:true,
-                accurateTrackBounce:true
-            });
-        </script>
-        <noscript>
-            <div>
-                <img src="https://mc.yandex.ru/watch/89108542" style="position:absolute; left:-9999px;" alt="" />
-            </div>
-        </noscript>
-        <!-- /Yandex.Metrika counter -->
-        
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
-        <meta name="theme-color" content="#021831">
-        
-        <link rel="icon" href="img/ava.png">
-        
-        <link rel="stylesheet" href="../styles/all/NavigationBar.css">
-        <link rel="stylesheet" href="../styles/contacts/contacts_style.css">
-        <link rel="stylesheet" href="../styles/all/Footer.css">
+    <meta name="theme-color" content="#021831">
+
+    <link rel="icon" href="img/ava.png">
+
+    <link rel="stylesheet" href="../styles/all/NavigationBar.css">
+    <link rel="stylesheet" href="../styles/contacts/contacts_style.css">
+    <link rel="stylesheet" href="../styles/all/Footer.css">
 
 
-        <title>Контакты</title>
-    </head>
+    <title>Контакты</title>
+</head>
 
-    <body>
-        <header class="header">
-            <div class="container_header">
-                <div class="header_body">
-                    <a href="../index.html" class="header_logo">
-                        <img src="../img/all/ava.png">
-                    </a>
-
-                    <nav class="header_menu">
-                        <ul class="header_list">
-                            <li>
-                                <a href="../index.html" class="header_link">Главная</a>
-                            </li>
-                            <li>
-                                <a href="News.html" class="header_link">Новости</a>
-                            </li>
-                            <li>
-                                <a href="Products.html" class="header_link">Продукты</a>
-                            </li>
-                            <li>
-                                <a href="Contact.html" class="header_link">Контакты</a>
-                            </li>
-                            <li>
-                                <a href="AboutMe.html" class="header_link">О разработчике</a>
-                            </li>
-                        </ul>
-                    </nav>
+<body class="body_st">
+    <!-- Header -->
+    <header class="header">
+        <div class="container_header">
+            <div class="header_body">
+                <div class="header_logo">
+                    <a href="../index.html"><img src="../img/all/ava.png"></a>
                 </div>
-            </div>
-        </header>
 
-        <div class="content">
-            <div class="container_page">
-                <div class="shapka">
-                    <img src="../img/all/shapka.png" class="shapkaImg" width="100%"/>
+                <div class="header_burger" onclick="OpenMenu()">
+                    <span class="r1"></span>
+                    <span class="r2"></span>
+                    <span class="r3"></span>
                 </div>
-            </div>        
+
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li>
+                            <a href="../index.html" class="header_link">Главная</a>
+                        </li>
+                        <li>
+                            <a href="News.html" class="header_link">Новости</a>
+                        </li>
+                        <li>
+                            <a href="Products.html" class="header_link">Продукты</a>
+                        </li>
+                        <li>
+                            <a href="Contact.html" class="header_link">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="AboutMe.html" class="header_link">О разработчике</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+    </header>
 
-        <footer class="footer">
-            <div class="container_footer">
-                <div class="logo_div">
-                    <a href="">
-                        <img src="../img/all/ava.png" width="80px" height="80px">
-                    </a>
+    <!-- Area for view on mobile -->
+    <div class="burger_menu">
+        <ul class="burger_list">
+            <li>
+                <a href="../index.html" class="burger_link">Главная</a>
+            </li>
+            <li>
+                <a href="News.html" class="burger_link">Новости</a>
+            </li>
+            <li>
+                <a href="Products.html" class="burger_link">Продукты</a>
+            </li>
+            <li>
+                <a href="Contact.html" class="burger_link">Контакты</a>
+            </li>
+            <li>
+                <a href="AboutMe.html" class="burger_link">О разработчике</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="container_page">
+            <div class="shapka">
+                <img src="../img/all/shapka.png" class="shapkaImg" width="100%" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container_footer">
+            <div class="logo_div">
+                <a href="">
+                    <img src="../img/all/ava.png" width="80px" height="80px">
+                </a>
+            </div>
+
+            <div class="d-flex">
+                <div class="col">
+                    <h2>Информация</h2>
+                    <ul class="item_menu">
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="d-flex">
-                    <div class="col">
-                        <h2>Информация</h2>
-                        <ul class="item_menu">
-                            <li>
-                                <a href="" class="footer_link">Loading.....</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Loading.....</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Loading.....</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Loading.....</a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="col">
-                        <h2>Информация</h2>
-                        <ul class="item_menu">
-                            <li>
-                                <a href="" class="footer_link">Loading.....</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Loading.....</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Loading.....</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Loading.....</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col">
-                        <h2>Информация</h2>
-                        <ul class="item_menu">
-                            <li>
-                                <a href="" class="footer_link">Loading.....</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Loading.....</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Loading.....</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Loading.....</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col">
-                        <h2>Информация</h2>
-                        <ul class="item_menu">
-                            <li>
-                                <a href="" class="footer_link">Loading.....</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Loading.....</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Loading.....</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer_link">Loading.....</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col">
+                    <h2>Информация</h2>
+                    <ul class="item_menu">
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="social">
-                    <div class="container_social">
-                        <ul class="social_net">
-                            <li>
-                                <a href="" class="social_link">
-                                    <img src="../img/all/footer/VK.png" width="35px" height="35px">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="social_link">
-                                    <img src="../img/all/footer/Telegram.png" width="35px" height="35px">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="social_link">
-                                    <img src="../img/all/footer/Instagram.png" width="35px" height="35px">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="social_link">
-                                    <img src="../img/all/footer/Facebook.png" width="35px" height="35px">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="social_link">
-                                    <img src="../img/all/footer/Github.png" width="35px" height="35px">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="social_link">
-                                    <img src="../img/all/footer/Twitter.png" width="35px" height="35px">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="social_link">
-                                    <img src="../img/all/footer/Habr.png" alt="Habr" width="35px" height="35px">
-                                </a>
-                            </li>
-                        </ul>
+                <div class="col">
+                    <h2>Информация</h2>
+                    <ul class="item_menu">
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                    </ul>
+                </div>
 
-                        <ul class="social_copyrights">
-                            <li>
-                                <a href="">© 2022 Copyright Air Owlin</a>
-                            </li>
-                            <li>
-                                <a href="">All rights reserved</a>
-                            </li>
-                            <li>
-                                <a href="">Условия</a>
-                            </li>
-                            <li>
-                                <a href="">Политика конфедициальности</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col">
+                    <h2>Информация</h2>
+                    <ul class="item_menu">
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Loading.....</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-    </body>
+
+            <div class="social">
+                <div class="container_social">
+                    <ul class="social_net">
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="../img/all/footer/VK.png" width="35px" height="35px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="../img/all/footer/Telegram.png" width="35px" height="35px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="../img/all/footer/Instagram.png" width="35px" height="35px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="../img/all/footer/Facebook.png" width="35px" height="35px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="../img/all/footer/Github.png" width="35px" height="35px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="../img/all/footer/Twitter.png" width="35px" height="35px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="../img/all/footer/Habr.png" alt="Habr" width="35px" height="35px">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="social_copyrights">
+                        <li>
+                            <a href="">© 2022 Copyright Air Owlin</a>
+                        </li>
+                        <li>
+                            <a href="">All rights reserved</a>
+                        </li>
+                        <li>
+                            <a href="">Условия</a>
+                        </li>
+                        <li>
+                            <a href="">Политика конфедициальности</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- Script at the end (after loading the page)-->
+<script src="../js/OpenBurger.js"></script>
+
 </html>

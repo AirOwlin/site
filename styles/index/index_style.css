@@ -67,6 +67,10 @@
 }
 
 @media (max-width: 767px) {
+    .content {
+        padding: 60px 0px 0px 0px;
+    }
+
     .sect li h3 {
         padding: 7px 0px;
     }

@@ -47,6 +47,10 @@
 }
 
 @media (max-width: 1280px) {
+    .content {
+        padding: 60px 0px 0px 0px;
+    }
+    
     .profileDev {
         width: 100%;
         flex-direction: column;

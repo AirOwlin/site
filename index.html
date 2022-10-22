@@ -1,28 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function (m, e, t, r, i, k, a) {
-            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-        })
-            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-        ym(89108542, "init", {
-            clickmap: true,
-            trackLinks: true,
-            accurateTrackBounce: true
-        });
-    </script>
-    <noscript>
-        <div>
-            <img src="https://mc.yandex.ru/watch/89108542" style="position:absolute; left:-9999px;" alt="" />
-        </div>
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
@@ -39,12 +18,13 @@
 </head>
 
 <body class="body_st">
+    <!-- Header -->
     <header class="header">
         <div class="container_header">
             <div class="header_body">
-                <a class="header_logo">
-                    <img src="img/all/ava.png">
-                </a>
+                <div class="header_logo">
+                    <a href=""><img src="../img/all/ava.png"></a>
+                </div>
 
                 <div class="header_burger" onclick="OpenMenu()">
                     <span class="r1"></span>
@@ -75,7 +55,7 @@
         </div>
     </header>
 
-    <!-- Область ссылок на телефоне -->
+    <!-- Area for view on mobile -->
     <div class="burger_menu">
         <ul class="burger_list">
             <li>
@@ -95,8 +75,8 @@
             </li>
         </ul>
     </div>
-    <!-------------------------------->
 
+    <!-- Content -->
     <div class="content">
         <div class="container_page">
             <p class="date_p">
@@ -123,7 +103,7 @@
                     document.write("Сегодня: " + date_time());
                 </script>
             </p>
-            
+
             <div class="about_site">
                 <h1>О сайте</h1>
                 <p>Разработчик: Air Owlin</p>
@@ -154,14 +134,14 @@
         </div>
     </div>
 
-    <!-- Область просмотра -->
+    <!-- View picture area -->
     <div class="AreaToView">
         <span class="Cross">&times;</span>
         <img class="ImgOpenned">
         <div class="Description"></div>
     </div>
-    <!----------------------->
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container_footer">
             <div class="logo_div">
@@ -303,7 +283,8 @@
         </div>
     </footer>
 </body>
-<!-- Скрипт в конце (чтобы сработал после прогрузки страницы)-->
+<!-- Script at the end (after loading the page)-->
 <script src="js/OpenFullPicture.js"></script>
 <script src="js/OpenBurger.js"></script>
+
 </html>
