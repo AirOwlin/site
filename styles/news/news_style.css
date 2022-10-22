@@ -9,20 +9,18 @@
     background-color: #063060;
 }
 
-.info_news {
-    padding-bottom: 500px;
-}
-
 .info_news h1 {
     padding-top: 25px;
-    color: #ffffff;
+    color: white;
 }
 
-.info_news p {
-    color: #ffffff;
-    padding: 20px 0px;
+.news_new {
+    width: 100%;
+    height: 500px;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: #105cb3;
 }
-
 
 @media (max-width: 767px) {
     .content {

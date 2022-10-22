@@ -40,14 +40,18 @@
     color: #ffffff;
     padding: 25px 0px 15px 10px;
 }
+.sect {
+    padding: 0px 0px 50px 25px;
+    list-style-type: none;
+}
+.sect li {
+    width: 100%;
+}
 .sect li h3 {
     color: #ffffff;
     padding: 5px 0px;
 }
-.sect {
-    padding: 0px 100px 50px 25px;
-    list-style-type: none;
-}
+
 .more {
     text-decoration: none;
     color: rgb(30, 51, 81);
@@ -58,19 +62,19 @@
     color: rgb(108, 211, 240);
 }
 
-.viewPicture {
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    background-color:#2d89a0;
-    border-radius: 10px;
-}
-
 @media (max-width: 767px) {
     .content {
         padding: 60px 0px 0px 0px;
     }
 
+    .about_site {
+        padding: 0px 0px 25px 0px;
+    }
+
+    .sect {
+        padding: 0px 0px 25px 25px;
+    }
+    
     .sect li h3 {
         padding: 7px 0px;
     }
