@@ -41,7 +41,7 @@
     padding: 25px 0px 15px 10px;
 }
 .sect {
-    padding: 0px 0px 50px 25px;
+    padding: 0px 0px 25px 25px;
     list-style-type: none;
 }
 .sect li {
@@ -62,6 +62,13 @@
     color: rgb(108, 211, 240);
 }
 
+.sections_1 {
+    background-color: #2d89a0;
+    height: 250px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
 @media (max-width: 767px) {
     .content {
         padding: 60px 0px 0px 0px;
@@ -69,10 +76,6 @@
 
     .about_site {
         padding: 0px 0px 25px 0px;
-    }
-
-    .sect {
-        padding: 0px 0px 25px 25px;
     }
     
     .sect li h3 {

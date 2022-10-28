@@ -35,8 +35,12 @@
     padding-bottom: 10px;
 }
 
-.status span {
-    /*color: greenyellow;*/
+.status::after {
+    /*
+    content: "online";
+    color: greenyellow;
+    */
+    content: "offline";
     color: grey;
 }
 
