@@ -26,6 +26,12 @@
     flex-direction: column;
     border: 10px solid #fff;
     border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+.product:hover, .plugin:hover {
+    background-color: #46a0c3;
+    transition: all 0.5s ease 0s;
 }
 
 .title_a {
@@ -54,7 +60,7 @@
 }
 
 .downloads {
-    padding: 25px 0px 15px 0px;
+    padding: 25px 0px 0px 0px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -84,19 +90,38 @@
     background-color: rgb(114, 241, 140);
     color: #489834;
     margin-right: 10px;
+    transition: all 0.5s ease 0s;
+}
+.pr_link_android:hover {
+    background-color:#489834;
+    color: rgb(114, 241, 140);
+    transition: all 0.5s ease 0s;
 }
 
 .pr_link_ios {
     background-color: rgb(255, 255, 255);
     color: #959595;
     margin: 0px 10px;
+    transition: all 0.5s ease 0s;
+}
+.pr_link_ios:hover {
+    background-color: #959595;
+    color:  rgb(255, 255, 255);
+    transition: all 0.5s ease 0s;
 }
 
 .pr_link_git {
     background-color: rgb(84, 93, 86);
     color: #ffffff;
     margin-left: 10px;
+    transition: all 0.5s ease 0s;
 }
+.pr_link_git:hover {
+    background-color: #ffffff;
+    color:  rgb(84, 93, 86);
+    transition: all 0.5s ease 0s;
+}
+
 
 @media (max-width: 767px) {
     .content {
