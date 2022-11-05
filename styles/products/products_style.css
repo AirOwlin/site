@@ -13,6 +13,10 @@
     color: #ffffff;
 }
 
+.plugins_div > h1 {
+    margin-top: 50px;
+}
+
 .info {
     color: #ffffff;
     padding: 20px 0px;
@@ -129,10 +133,6 @@
 
     .title {
         margin-top: 20px;
-    }
-
-    .plugins_div > h1 {
-        margin-top: 50px;
     }
 }
 
