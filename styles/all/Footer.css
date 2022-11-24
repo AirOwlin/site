@@ -2,14 +2,12 @@
 .footer {
     display: block;
     box-sizing: border-box;
-    padding-top: 20px;
-    padding-bottom: 20px;
     position: relative;
     background-color: #021831;
 }
 
 .container_footer {
-    padding: 0px 15px;
+    padding: 20px 20px;
 }
 
 .logo_div {
@@ -17,15 +15,17 @@
 }
 
 .d-flex {
-    display: flex;
-    padding: 0px 0px 20px 0px;
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
 }
 
 .col {
     background-color: #063060;
     padding-bottom: 5px;
-    width: 24%;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -56,42 +56,53 @@
 
 .social {
     display: flex;
+    margin-top: 20px;
 }
 
 .container_social {
     width: 100%;
     height: 100%;
     background-color: #063060;
-    align-items: center;
     border-radius: 10px;
+    padding: 10px;
 }
 
 .social_net {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    padding: 10px 0px 10px 10px;
-    align-items: center;
-}
-
-.social_net li {
     list-style: none;
     display: flex;
-    align-items: center;
-    height: 100%;
-    margin-right: 25px;
+    flex-direction: row;
+    width: 100%;
 }
 
-.social_link {
+.social_net li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.social_link  {
+    text-decoration: none;
     display: flex;
+    flex-direction: row;
     align-items: center;
+    width: 100%;
+    color: white;
+}
+.social_link img {
+    width: 35px;
+    height: 35px;
+    transition: all 1s ease;
+}
+.social_link p {
+    display: none;
+    margin-left: 20px;
+    font-weight: bold;
 }
 
 .social_copyrights {
     display: flex;
     width: 100%;
     height: 100%;
-    padding: 10px 10px 10px 10px;
+    margin-top: 15px;
+    justify-content: stretch;
 }
 
 .social_copyrights li {
@@ -106,90 +117,64 @@
     text-decoration: none;
     color: white;
     font-size: 13px;
-}
-
-.social_copyrights li p {
-    color: white;
+    font-weight: bold;
 }
 
 
-@media (max-width: 445px) {
+@media (max-width: 455px) {
     .social_net {
-        display: flex;
-        height: 100%;
-        width: 100%;
-        padding: 10px 0px 0px 0px;
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
     }
 
-    .social_net li {
-        padding: 5px 0px 15px 0px;
+    .social_net li:first-child {
+        margin-right: 0px;
     }
-}
 
+    .social_net li:not(:first-child) {
+        margin-top: 20px;
+        margin-right: 0px;
+    }
 
-@media (max-width: 1080px) {
-    .container_footer {
-        max-width: none;
+    .social_link:hover p {
+        color: rgb(64, 126, 225);
     }
-    
-    .d-flex {
-        flex-direction: column;
-        padding: 0px 0px 10px 0px;
+    .social_link:hover img {
+        width: 50px;
+        height: 50px;
+        transition: all 1s ease;
     }
-    
-    .col {
-        background-color: #063060;
-        margin: 10px 0px;
-        width: 100%;
-    }
-    
-    .col h2 {
-        font-size: 18px;
-        color: white;
-        padding-left: 20px;
-    }
-    
-    .item_menu li {
-        display: flex;
-        list-style: none;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .footer_link {
-        text-decoration: none;
-        width: 100%;
-        height: 100%;
-        color: white;
-        padding: 5px 0px 0px 5px;
-    }
-    
-    .container_social {
-        width: 100%;
-        height: 100%;
-        background-color: #063060;
-        align-items: center;
-    }
-    
-    .social_copyrights {
+
+    .social_link p {
         display: block;
     }
-    
-    .social_copyrights li {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
+}
 
-    .social_copyrights li a {
-        text-decoration: none;
-        padding: 5px 0px 5px 0px;
-        width: 100%;
-        height: 100%;
-        color: white;
+@media (max-width: 640px) {
+    .social_copyrights {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    .social_copyrights li:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .d-flex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 420px) {
+    .d-flex {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .col h2 {
+        font-size: 18px;
     }
 }
