@@ -14,6 +14,7 @@ html, body {
 
 
 /*================ Navigation ================*/
+/* HEADER */
 .header {
     position: fixed;
     width: 100%;
@@ -23,12 +24,14 @@ html, body {
     background-color: rgb(2, 24, 49);
 }
 
+/* CONTAINER HEADER */
 .container_header {
     max-width: 1180px;
     margin: 0 auto;
     padding: 0px 15px;
 }
 
+/* BODY IN HEADER */
 .header_body {
     position: relative;
     display: flex;
@@ -37,27 +40,34 @@ html, body {
     align-items: center; /* по вертикали */
 }
 
+/* LOGO */
 .header_logo, .header_logo a, .header_logo img{
     height: 100%;
 }
 
+/* BUTTON BURGER */
 .header_burger {
     display: none;
 }
+
+/* PANEL MENU */
 .burger_menu {
     display: none;
 }
 
+/* NAV */
 .header_menu {
     height: 100%;
 }
 
+/* LIST NAV */
 .header_list {
     display: flex;
     height: 100%;
     align-items: center;
 }
 
+/* LI */
 .header_list li {
     display: flex;
     list-style: none;
@@ -65,6 +75,7 @@ html, body {
     height: 100%;
 }
 
+/* LINK IN NAV */
 .header_link {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -72,25 +83,29 @@ html, body {
     font-size: 18px;
     display: flex;
     align-items: center;
-    height: 100%;
     padding: 0px 10px 0px 10px;
 }
 
 @media (max-width: 767px) {
+    /* CLASS lock for body */
     body.lock { overflow: hidden; }
 
     .header { z-index: 3; }
 
+    /* CONTAINER HEADER */
     .container_header {
         max-width: none;
         padding: 0px 15px;
         width: 100%;
     }
 
+    /* BODY IN HEADER */
     .header_body { height: 60px; }   
     
+    /* PANEL MENU */
     .header_menu { display: none; }
 
+    /* BUTTON BURGER */
     .header_burger {
         display: block;
         position: absolute;
@@ -99,6 +114,7 @@ html, body {
         width: 40px;
         height: 30px;
     }
+    /* HORIZONTAL BORDERS */
     .r1, .r2, .r3 {
         content: '';
         background-color: white;
@@ -126,6 +142,7 @@ html, body {
         transition: all 0.3s ease 0s;
     }
 
+    /* PANEL MENU */
     .burger_menu {
         top: -1000%;
         z-index: 2;
@@ -143,6 +160,7 @@ html, body {
         transition: all 0.3s ease 0s;
     }
 
+    /* LIST IN BURGER MENU */
     .burger_list {
         display: flex;
         flex-direction: column;
@@ -151,6 +169,7 @@ html, body {
         height: 100%;
     }
     
+    /* LI */
     .burger_list li {
         list-style: none;
         width: 100%;
@@ -160,12 +179,7 @@ html, body {
         background-color: rgb(2, 24, 49);
     }
 
-    /*.burger_link::after, .burger_link::before { 
-        content: " · ";
-        color: white;
-        display: contents;
-    }*/
-
+    /* LINK IN LIST */
     .burger_link {
         color: rgb(255, 255, 255);
         text-transform: uppercase;
