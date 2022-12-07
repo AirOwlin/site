@@ -27,11 +27,11 @@
     color: white;
 }
 
-.description h1 {
-    padding-bottom: 10px;
+.description p {
+    margin-top: 20px;
 }
 
-.status {
+.description h1 {
     padding-bottom: 10px;
 }
 
