@@ -139,6 +139,10 @@
         flex-direction: column;
     }
 
+    .title_a img {
+        margin: 0px;
+    }
+
     .tit_ver {
         width: 100%;
         display: flex;
