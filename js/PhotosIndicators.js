@@ -1,6 +1,6 @@
 // ссылки на элементы
-const list = document.querySelector('.lst_photos');
-const items = Array.from(document.querySelectorAll('.item'));
+const list = document.querySelector('.lst_photosM');
+const items = Array.from(document.querySelectorAll('.itemM'));
 const indicators = Array.from(document.querySelectorAll('.indicator'));
 
 // создание наблюдателя

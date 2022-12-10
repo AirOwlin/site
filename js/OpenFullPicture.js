@@ -1,6 +1,3 @@
-/* Твоя миниатюрная картинка */
-/*var miniaturePic = document.getElementsByClassName("ImgToOpen")[0];*/
-
 /* Блок просмотра */
 var area = document.getElementsByClassName("AreaToView")[0];
 

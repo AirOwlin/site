@@ -89,22 +89,41 @@
             </div>
             <div class="Photos_product">
                 <p class="title">Photos</p>
-                <div class="DIV_viewport">
+                <div class="DIV_PCviewport">
+                    <div class="view_container">
+                        <button class="arrowL" onclick="previousSlide()">&#10094;</button>
+                        <div class="lst_photosPC">
+                            <li class="itemPC" title="Picture 1"><img src="../../img/example.png"></li>
+                            <li class="itemPC" title="Picture 2"><img src="../../img/example.png"></li>
+                            <li class="itemPC" title="Picture 3"><img src="../../img/Bridge.jpg"></li>
+                            <li class="itemPC" title="Picture 4"><img src="../../img/example.png"></li>
+                            <li class="itemPC" title="Picture 5"><img src="../../img/example.png"></li>
+                            <li class="itemPC" title="Picture 6"><img src="../../img/example.png"></li>
+                            <li class="itemPC" title="Picture 7"><img src="../../img/example.png"></li>
+                            <li class="itemPC" title="Picture 8"><img src="../../img/example.png"></li>
+                            <li class="itemPC" title="Picture 9"><img src="../../img/example.png"></li>
+                            <li class="itemPC" title="Picture 10"><img src="../../img/example.png"></li>
+                        </div>
+                        <button class="arrowR" onclick="nextSlide()">&#10095;</button>
+                    </div>
+                    <div class="infoP"></div>
+                </div>
+                <div class="DIV_Mviewport">
                     <div class="viewport">
-                        <ul class="lst_photos">
-                          <li class="item"><img src="../../img/example.png"></li>
-                          <li class="item"><img src="../../img/example.png"></li>
-                          <li class="item"><img src="../../img/example.png"></li>
-                          <li class="item"><img src="../../img/example.png"></li>
-                          <li class="item"><img src="../../img/example.png"></li>
-                          <li class="item"><img src="../../img/example.png"></li>
-                          <li class="item"><img src="../../img/example.png"></li>
-                          <li class="item"><img src="../../img/example.png"></li>
-                          <li class="item"><img src="../../img/example.png"></li>
-                          <li class="item"><img src="../../img/example.png"></li>
+                        <ul class="lst_photosM">
+                          <li class="itemM"><img src="../../img/example.png"></li>
+                          <li class="itemM"><img src="../../img/example.png"></li>
+                          <li class="itemM"><img src="../../img/example.png"></li>
+                          <li class="itemM"><img src="../../img/example.png"></li>
+                          <li class="itemM"><img src="../../img/example.png"></li>
+                          <li class="itemM"><img src="../../img/example.png"></li>
+                          <li class="itemM"><img src="../../img/example.png"></li>
+                          <li class="itemM"><img src="../../img/example.png"></li>
+                          <li class="itemM"><img src="../../img/example.png"></li>
+                          <li class="itemM"><img src="../../img/example.png"></li>
                         </ul>
                     </div>
-                    <ul class="indicatorsList"> <!-- aria-hidden -->
+                    <ul class="indicatorsList">
                         <li class="indicator"></li>
                         <li class="indicator"></li>
                         <li class="indicator"></li>
@@ -283,6 +302,7 @@
 </body>
 <!-- Script at the end (after loading the page)-->
 <script src="../../js/OpenBurger.js"></script>
-<script src="../../js//PhotosIndicators.js"></script>
+<script src="../../js/PhotosIndicators.js"></script>
+<script src="../../js/ArrowActivity.js"></script>
 
 </html>
