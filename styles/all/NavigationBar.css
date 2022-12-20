@@ -84,9 +84,40 @@ html, body {
     display: flex;
     align-items: center;
     padding: 0px 10px 0px 10px;
+    transition: all 1s ease 0s;
+    position: relative;
+    height: 100%;
+}
+.header_link::after, .coffee_a:after { 
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #ffffff;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  }
+  
+.header_link:hover, .coffee_a:hover { color: #ffffff; }
+.header_link:hover::after, .coffee_a:hover::after{ width: 100%; }
+
+.coffee_a {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coffee_a img {
+    height: 100%;
 }
 
 @media (max-width: 767px) {
+    .coffee_a {
+        height: 150px;
+    }
     /* CLASS lock for body */
     body.lock { overflow: hidden; }
 

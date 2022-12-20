@@ -19,13 +19,15 @@
 .about_site {
     margin-bottom: 25px;
     padding: 0px 25px 25px 0px;
-    background-color:#2d89a0;
+    background-color: #2d89a0;
     border-radius: 10px;
 }
+
 .about_site h1 {
     color: #ffffff;
     padding: 25px 0px 15px 10px;
 }
+
 .about_site p {
     color: #ffffff;
     padding-left: 25px;
@@ -33,20 +35,24 @@
 
 .sections_site {
     margin-bottom: 20px;
-    background-color:#2d89a0;
+    background-color: #2d89a0;
     border-radius: 10px;
 }
+
 .sections_site h1 {
     color: #ffffff;
     padding: 25px 0px 15px 10px;
 }
+
 .sect {
     padding: 0px 0px 25px 25px;
     list-style-type: none;
 }
+
 .sect li {
     width: 100%;
 }
+
 .sect li h3 {
     color: #ffffff;
     padding: 5px 0px;
@@ -58,7 +64,7 @@
 }
 
 .more:hover {
-    text-decoration:underline;
+    text-decoration: underline;
     color: rgb(108, 211, 240);
 }
 
@@ -77,7 +83,7 @@
     .about_site {
         padding: 0px 0px 25px 0px;
     }
-    
+
     .sect li h3 {
         padding: 7px 0px;
     }

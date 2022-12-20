@@ -2,9 +2,9 @@
 var describe = document.getElementsByClassName("infoP")[0];
 
 /* Функция нажатия по миниатюре */
-function ViewImg(el) {
+/*function ViewImg(el) {
     imgView.src = el.src;
-}
+}*/
 
 /* Устанавливаем стартовый индекс слайда по умолчанию: */
 let slideIndex = 1;
