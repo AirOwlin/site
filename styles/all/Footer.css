@@ -90,7 +90,7 @@
     margin-right: 20px;
 }
 
-/* SOCIAL LINK BLOCK */
+/* SOCIAL LINK WITH IMG */
 .social_link  {
     text-decoration: none;
     display: flex;
@@ -127,7 +127,7 @@
     margin-right: 20px;
 }
 
-/* LINK */
+/* LINKS */
 .social_copyrights li a {
     text-decoration: none;
     color: white;
@@ -139,6 +139,8 @@
 }
 
 
+
+/* ----- MEDIA BREAKPOINTS ----- */
 @media (max-width: 455px) {
     .social_net {
         flex-direction: column;
@@ -179,7 +181,6 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 @media (max-width: 420px) {
     .d-flex {
         grid-template-columns: repeat(1, 1fr);
@@ -191,3 +192,4 @@
         font-size: 18px;
     }
 }
+/*-------------------------------*/

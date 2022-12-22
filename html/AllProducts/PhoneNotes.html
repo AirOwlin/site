@@ -10,7 +10,7 @@
     <link rel="icon" href="../../img/all/avaNY.png">
 
     <link rel="stylesheet" href="../../styles/all/NavigationBar.css">
-    <link rel="stylesheet" href="../../styles/all_products/for_product.css">
+    <link rel="stylesheet" href="../../styles/all_products/product_style.css">
     <link rel="stylesheet" href="../../styles/all/Footer.css">
 
     <title>Продукты</title>
@@ -85,8 +85,19 @@
                     <p class="descr">
                         Version: 0.815Beta (05.11.2022)
                     </p>
+                    <p class="descr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+                        interdum, nisi lorem egestas vitae scel<span class="dots">... </span><span class="moreTxt">erisque enim
+                        ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                        Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum
+                        dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui
+                        eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus
+                        pulvinar nibh tempor porta. </span><a class="myBtn" onclick="ShowExtraInfo()">Подробнее</a>
+                    </p>
+
                 </div>
             </div>
+
             <div class="Photos_product">
                 <p class="title">Photos</p>
                 <div class="DIV_PCviewport">
@@ -108,19 +119,20 @@
                     </div>
                     <div class="infoP"></div>
                 </div>
+
                 <div class="DIV_Mviewport">
                     <div class="viewport">
                         <ul class="lst_photosM">
-                          <li class="itemM"><img src="../../img/example.png"></li>
-                          <li class="itemM"><img src="../../img/example.png"></li>
-                          <li class="itemM"><img src="../../img/Bridge.jpg"></li>
-                          <li class="itemM"><img src="../../img/example.png"></li>
-                          <li class="itemM"><img src="../../img/example.png"></li>
-                          <li class="itemM"><img src="../../img/example.png"></li>
-                          <li class="itemM"><img src="../../img/example.png"></li>
-                          <li class="itemM"><img src="../../img/example.png"></li>
-                          <li class="itemM"><img src="../../img/example.png"></li>
-                          <li class="itemM"><img src="../../img/example.png"></li>
+                            <li class="itemM"><img src="../../img/example.png"></li>
+                            <li class="itemM"><img src="../../img/example.png"></li>
+                            <li class="itemM"><img src="../../img/Bridge.jpg"></li>
+                            <li class="itemM"><img src="../../img/example.png"></li>
+                            <li class="itemM"><img src="../../img/example.png"></li>
+                            <li class="itemM"><img src="../../img/example.png"></li>
+                            <li class="itemM"><img src="../../img/example.png"></li>
+                            <li class="itemM"><img src="../../img/example.png"></li>
+                            <li class="itemM"><img src="../../img/example.png"></li>
+                            <li class="itemM"><img src="../../img/example.png"></li>
                         </ul>
                     </div>
                     <ul class="indicatorsList">
@@ -137,14 +149,18 @@
                     </ul>
                 </div>
             </div>
+
             <div class="Download_product">
                 <p class="title">Download</p>
                 <ul class="downloads">
-                    <li><a class="pr_link_android" href="https://github.com/AirOwlin/PhoneNotes/raw/main/Phone%20Notes.apk">Скачать на Android</a></li>
+                    <li><a class="pr_link_android"
+                            href="https://github.com/AirOwlin/PhoneNotes/raw/main/Phone%20Notes.apk">Скачать на
+                            Android</a></li>
                     <li><a class="pr_link_ios" href="">Скачать на IOS</a></li>
                     <li><a class="pr_link_git" href="">Скачать c Github</a></li>
                 </ul>
             </div>
+
             <div class="Comments_product">
                 <p class="title">Comments</p>
             </div>
@@ -256,7 +272,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="" class="social_link">
+                            <a href="" class=" social_link">
                                 <img src="../../img/all/footer/Facebook.png" alt="Facebook">
                                 <p>Facebook</p>
                             </a>
@@ -268,11 +284,11 @@
                             </a>
                         </li>
                         <li>
-                            <a href="" class="social_link">
+                            <a href="" class=" social_link">
                                 <img src="../../img/all/footer/Twitter.png" alt="Twitter">
                                 <p>Twitter</p>
                             </a>
-                        </diliv>
+                            </diliv>
                         <li>
                             <a href="" class="social_link">
                                 <img src="../../img/all/footer/Habr.png" alt="Habr">
@@ -302,6 +318,7 @@
 </body>
 <!-- Script at the end (after loading the page)-->
 <script src="../../js/OpenBurger.js"></script>
+<script src="../../js/ShowMoreInfo.js"></script>
 <script src="../../js/PhotosIndicators.js"></script>
 <script src="../../js/ArrowActivity.js"></script>
 
