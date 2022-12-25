@@ -44,6 +44,12 @@
 .myBtn {
     color: #3cadc1;
     font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.myBtn:hover {
+    color: #3ce2ff;
+    transition: all 0.3s ease 0s;
 }
 
 .Photos_product {
