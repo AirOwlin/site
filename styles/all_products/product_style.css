@@ -141,8 +141,8 @@
 
 .viewport {
     margin-top: 20px;
-    width: 253.125px;
     height: 450px;
+    aspect-ratio: 9/16;
 }
 
 .lst_photosM {
