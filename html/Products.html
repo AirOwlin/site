@@ -78,11 +78,20 @@
     <!-- Content -->
     <div class="content">
         <div class="container_page">
-            <div class="products_div">
-                <h1>Продукты</h1>
-                <p class="info">Данный раздел содержит информационные карточки продуктов. ↓↓↓</p>
-                <ul class="products">
-                    <li class="product" onclick="location.href='AllProducts/PhoneNotes.html';">
+            <div class="Nav_section">
+                <ul class="lst_links">
+                    <li><a href="#MProd">📱 Приложения для телефона</a></li>
+                    <li><a href="#PCProd">💻 Программы для компьютера</a></li>
+                    <li><a href="#PCPlug">💻 Плагины для компьютера</a></li>
+                </ul>   
+            </div>
+
+            <!-- FOR MOBILES -->
+            <a id="MProd" class="archFor"></a>
+            <div class="mobile_prod">
+                <h1>⭐Приложения для телефона⭐</h1>
+                <ul class="appsM">
+                    <li class="app" onclick="location.href='AllProducts/PhoneNotes.html';">
                         <a class="title_a">
                             <img src="../img/all/ava.png">
                             <div class="tit_ver">
@@ -93,34 +102,86 @@
                         <div class="descr">
                             <p>Описание. Добавляем...</p>
                         </div>
-                        <ul class="downloads">
-                            <li><a class="pr_link_android" href="https://github.com/AirOwlin/PhoneNotes/raw/main/Phone%20Notes.apk">Скачать на Android</a></li>
-                            <li><a class="pr_link_ios" href="">Скачать на IOS</a></li>
-                            <li><a class="pr_link_git" href="">Скачать c Github</a></li>
-                        </ul>
                     </li>
-                </ul>
-            </div>
-            <div class="plugins_div">
-                <h1>Плагины</h1>
-                <p class="info">Данный раздел содержит полезные плагины. ↓↓↓</p>
-                <ul class="plugins">
-                    <li class="plugin" onclick="location.href='';">
+                    <li class="app" onclick="location.href='';">
                         <a class="title_a">
                             <img src="../img/products_img/icon_img.jpg">
                             <div class="tit_ver">
-                                <p class="title">Plugin's name</p>
+                                <p class="title">Mobile App</p>
+                                <p class="product_version"><b>Version:</b> None</p>
+                            </div>
+                        </a>
+                        <div class="descr">
+                            <p>Описание. Добавляем...</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="hr-line">
+
+            <!-- FOR PC -->
+            <a id="PCProd" class="archFor"></a>
+            <div class="pc_prod">
+                <h1>⭐Программы для компьютера⭐</h1>
+                <ul class="programPC">
+                    <li class="programm" onclick="location.href='';">
+                        <a class="title_a">
+                            <img src="../img/products_img/icon_img.jpg">
+                            <div class="tit_ver">
+                                <p class="title">PC Program</p>
                                 <p class="product_version"><b>Version:</b> None</p>
                             </div>
                         </a>
                         <p class="descr">
                             Описание. Добавляем...
                         </p>
-                        <ul class="downloads">
-                            <li><a class="pr_link_android" href="">Скачать на Android</a></li>
-                            <li><a class="pr_link_ios" href="">Скачать на IOS</a></li>
-                            <li><a class="pr_link_git" href="">Скачать c Github</a></li>
-                        </ul>
+                    </li>
+                    <li class="programm" onclick="location.href='';">
+                        <a class="title_a">
+                            <img src="../img/products_img/icon_img.jpg">
+                            <div class="tit_ver">
+                                <p class="title">PC Program</p>
+                                <p class="product_version"><b>Version:</b> None</p>
+                            </div>
+                        </a>
+                        <p class="descr">
+                            Описание. Добавляем...
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="hr-line">
+
+            <!-- FOR PC (Plugins) -->
+            <a id="PCPlug" class="archFor"></a>
+            <div class="pc_plug_prod">
+                <h1>⭐Плагины для компьютера⭐</h1>
+                <ul class="plugins">
+                    <li class="plugin" onclick="location.href='';">
+                        <a class="title_a">
+                            <img src="../img/products_img/icon_img.jpg">
+                            <div class="tit_ver">
+                                <p class="title">PC Plugin</p>
+                                <p class="product_version"><b>Version:</b> None</p>
+                            </div>
+                        </a>
+                        <p class="descr">
+                            Описание. Добавляем...
+                        </p>
+                    </li>
+                    <li class="plugin" onclick="location.href='';">
+                        <a class="title_a">
+                            <img src="../img/products_img/icon_img.jpg">
+                            <div class="tit_ver">
+                                <p class="title">PC Plugin</p>
+                                <p class="product_version"><b>Version:</b> None</p>
+                            </div>
+                        </a>
+                        <p class="descr">
+                            Описание. Добавляем...
+                        </p>
                     </li>
                 </ul>
             </div>
