@@ -85,8 +85,11 @@
 .plugin:not(:last-child) {
     margin-bottom: 50px;
 }
-.app:hover, .programm:hover {
-    background-color: #46a0c3;
+.app:hover, 
+.programm:hover,
+.plugin:hover {
+    background-color: #25b3c9; /*#46a0c3*/
+    border-color: #00ff44;
     transition: all 0.5s ease 0s;
 }
 
