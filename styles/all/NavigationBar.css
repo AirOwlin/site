@@ -12,6 +12,25 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* W3C standard сейчас только для Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(11, 86, 172) rgb(2, 24, 49);
+}
+  
+/* для Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+    height: 0px;
+    width: 8px;
+}
+*::-webkit-scrollbar-track {
+    background: rgb(2, 24, 49);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(11, 86, 172);
+    border-radius: 5px;
+}
+
 
 /*================ Navigation ================*/
 /* HEADER */
