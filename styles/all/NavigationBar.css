@@ -31,6 +31,12 @@ html, body {
     border-radius: 5px;
 }
 
+@media (max-width: 767px) {
+    *::-webkit-scrollbar {
+    width: 0px;
+}
+}
+
 
 /*================ Navigation ================*/
 /* HEADER */
