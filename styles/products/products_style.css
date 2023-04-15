@@ -18,13 +18,11 @@
 
 .lst_links {
     list-style: none;
+    display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.lst_links li {
-    margin-left: 0px;
-}
 .lst_links li:not(:last-child) {
     margin-bottom: 15px;
 }
@@ -41,11 +39,11 @@
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
-    transition: all 0.5s ease 0s;
+    transition: color 0.5s ease-out 0s;
 }
 .lst_links li a:hover {
     color: #00ff44;
-    transition: all 0.5s ease 0s;
+    transition: color 0.5s ease 0s;
 }
 
 .mobile_prod > h1, 
@@ -78,7 +76,7 @@
     border: 10px solid #fff;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 1s ease 0s;
+    /*transition: not(background-color) 0.5s;*/
 }
 .app:not(:last-child),
 .programm:not(:last-child),
@@ -90,7 +88,7 @@
 .plugin:hover {
     background-color: #25b3c9; /*#46a0c3*/
     border-color: #00ff44;
-    transition: all 0.5s ease 0s;
+    transition: all ease 0.5s;
 }
 
 .title_a {

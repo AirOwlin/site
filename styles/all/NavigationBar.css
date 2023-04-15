@@ -66,7 +66,10 @@ html, body {
 }
 
 /* LOGO */
-.header_logo, .header_logo a, .header_logo img{
+.header_logo a img {
+    aspect-ratio: 1/1;
+}
+.header_logo, .header_logo a, .header_logo a img {
     height: 100%;
 }
 
@@ -109,7 +112,7 @@ html, body {
     display: flex;
     align-items: center;
     padding: 0px 10px 0px 10px;
-    transition: all 1s ease 0s;
+    transition: not(all) 1s ease 0s;
     position: relative;
     height: 100%;
 }
