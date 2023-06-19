@@ -35,15 +35,6 @@
     padding-bottom: 10px;
 }
 
-.status::after {
-    /*
-    content: "online";
-    color: greenyellow;
-    */
-    content: "offline";
-    color: grey;
-}
-
 @media (max-width: 767px) {
     .content {
         padding: 60px 0px 0px 0px;
