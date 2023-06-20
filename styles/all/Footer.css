@@ -30,15 +30,12 @@
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(4, 150px);
-}
-
-.info_div {
-    padding-bottom: 5px;
+    padding: 10px;
 }
 
 /* TITLE IN INFO COLUMN */
 .info_div h2 {
-    padding: 10px 5px 10px 10px;
+    padding: 0px 5px 10px 10px;
     font-size: 15px;
     color: white; /*  #0b3769 */
 }
@@ -86,7 +83,7 @@
 /* LIST NETWORKS */
 .social_net {
     list-style: none;
-    padding-left: 15px;
+    padding: 0px 15px 15px 15px;
     width: 100%;
     display: grid;
     gap: 5px;
@@ -166,7 +163,6 @@
 @media (max-width: 640px) {
     .social_copyrights {
         flex-direction: column;
-        margin-top: 20px;
     }
     
     .social_copyrights li:not(:first-child) {
@@ -175,25 +171,44 @@
 }
 
 @media (max-width: 768px) {
+    
+}
+
+@media (max-width: 934px) {
     .d-flex {
         flex-direction: column;
     }
 
+    .info_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info_div h2 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .item_menu {
+        align-items: center;
+    }
+
+    .item_menu li {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     .col {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+        align-content: center;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(110px, 150px));
     }
 
     .col_social {
         margin-left: 0px;
         margin-top: 20px;
     }
-
-    .col_social h2 {
-        padding: 10px 5px 10px 10px;
-    }
-
-    .social_net {
-        padding: 0px 5px 10px 5px;
-    }
 }
+
 /*-------------------------------*/
