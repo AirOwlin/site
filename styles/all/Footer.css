@@ -185,6 +185,10 @@
         align-items: center;
     }
 
+    .info_div:not(:first-child) {
+        padding-top: 15px;
+    }
+
     .info_div h2 {
         padding-left: 0px;
         padding-right: 0px;
