@@ -1,0 +1,17 @@
+.block1 {
+    width: 100%;
+    height: 120px;
+    padding: 25px 0px 25px 10px;
+    background-color: #021831;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.block1 p {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    
+}

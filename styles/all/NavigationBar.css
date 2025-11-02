@@ -1,0 +1,249 @@
+/* =========== Default (ALL PAGES) =========== */
+
+:root {
+    --header-height: 80px;
+    --header-height-mobile: 60px;
+}
+
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content { padding-top: var(--header-height); }
+
+/* W3C standard сейчас только для Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(11, 86, 172) rgb(2, 24, 49);
+}
+  
+/* для Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+    height: 0px;
+    width: 8px;
+}
+*::-webkit-scrollbar-track {
+    background: rgb(2, 24, 49);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(11, 86, 172);
+    border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+    *::-webkit-scrollbar { width: 0px; }
+    .content { padding-top: var(--header-height-mobile); }
+}
+
+
+/*================ Navigation ================*/
+/* HEADER */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgb(2, 24, 49);
+}
+
+/* CONTAINER HEADER */
+.container_header {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+/* BODY IN HEADER */
+.header_body {
+    position: relative;
+    display: flex;
+    height: var(--header-height);
+    justify-content: left;
+    align-items: center;
+}
+
+/* LOGO */
+.header_logo a img {
+    aspect-ratio: 1/1;
+}
+.header_logo, .header_logo a, .header_logo a img {
+    height: 100%;
+}
+
+/* BUTTON BURGER */
+.header_burger {
+    display: none;
+}
+
+/* NAV - ОСНОВНОЕ МЕНЮ (для ПК) */
+.header_menu {
+    height: 100%;
+    margin-left: 20px;
+}
+
+/* LIST NAV */
+.header_list {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+/* LI */
+.header_list li {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+}
+
+/* LINK IN NAV */
+.header_link {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    transition: not(all) 1s ease 0s;
+    position: relative;
+    height: 100%;
+}
+.header_link::after, .coffee_a:after { 
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #ffffff;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+  
+.header_link:hover { color: #ffffff; }
+.header_link:hover::after { width: 100%; }
+
+.container_page {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #063060;
+}
+
+
+/* =========== MOBILE VERSION =========== */
+@media (max-width: 767px) {   
+    /* CLASS lock for body */
+    body.lock { overflow: hidden; }
+
+    /* CONTAINER HEADER */
+    .container_header {
+        max-width: none;
+        padding: 0px 15px;
+        width: 100%;
+    }
+
+    /* BODY IN HEADER */
+    .header_body { height: var(--header-height-mobile); }   
+    
+    /* СКРЫВАЕМ ОСНОВНОЕ МЕНЮ НА МОБИЛЬНЫХ */
+    .header_menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(2, 24, 49);
+        transition: left 0.3s ease 0s;
+        z-index: 2;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-y: auto;
+    }
+    
+    .header_menu.active {
+        left: 0;
+    }
+
+    /* МЕНЯЕМ СТИЛИ СПИСКА ДЛЯ МОБИЛЬНОЙ ВЕРСИИ */
+    .header_list {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding-top: 60px;
+    }
+    
+    /* LI ДЛЯ МОБИЛЬНОЙ ВЕРСИИ */
+    .header_list li {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        background-color: rgb(2, 24, 49);
+    }
+
+    /* LINK ДЛЯ МОБИЛЬНОЙ ВЕРСИИ */
+    .header_link {
+        padding: 25px 0px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    /* УБИРАЕМ АНИМАЦИЮ ПОДЧЕРКИВАНИЯ ДЛЯ МОБИЛЬНОЙ ВЕРСИИ */
+    .header_link::after {
+        display: none;
+    }
+
+    /* BUTTON BURGER */
+    .header_burger {
+        display: block;
+        position: absolute;
+        align-items: center;
+        right: 5px;
+        width: 40px;
+        height: 30px;
+        z-index: 4;
+    }
+    
+    /* HORIZONTAL BORDERS */
+    .r1, .r2, .r3 {
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .r1 { top: 0px; }
+    .r2 { top: calc(50% - 3px); }
+    .r3 { bottom: 0px; }
+    
+    .header_burger.active .r1{
+        transform: rotate(45deg);
+        top: 50%;
+        transition: all 0.3s ease 0s;
+    }
+    .header_burger.active .r2{
+        display: none;
+        transition: all 0s ease 0s;
+    }
+    .header_burger.active .r3{
+        transform: rotate(-45deg);
+        top: 50%;
+        transition: all 0.3s ease 0s;
+    }
+}

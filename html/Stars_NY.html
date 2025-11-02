@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <meta name="theme-color" content="#021831">
+
+    <link rel="icon" href="../img/all/ava.png">
+
+    <link rel="stylesheet" href="../styles/all/NavigationBar.css">
+    <link rel="stylesheet" href="../styles/NY/stars_ny.css">
+    <link rel="stylesheet" href="../styles/all/Footer.css">
+
+    <title>Звёзды</title>
+</head>
+
+<body>
+    <!-- Header (Mobile and PC version)-->
+    <header class="header">
+        <div class="container_header">
+            <div class="header_body">
+                <div class="header_logo">
+                    <a href="../index.html">
+                        <img src="../img/all/ava.png" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="header_burger" onclick="toggleMenu()">
+                    <span class="r1"></span>
+                    <span class="r2"></span>
+                    <span class="r3"></span>
+                </div>
+
+                <nav class="header_menu" id="mainMenu">
+                    <ul class="header_list">
+                        <li>
+                            <a href="../index.html" class="header_link">Главная</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Content -->
+    <div class="content">
+        <div class="container_page">
+            
+            <!-- Шапка с описанием -->
+            <header class="header_s">
+                <h1>✨ Звёздное Небо ✨</h1>
+                <p class="description">
+                    Добро пожаловать на наше новогоднее звёздное небо!
+                </p>
+                <div class="controls">
+                    <button id="changeLayout" class="layout-btn">Изменить расположение</button>
+                    <span class="layout-info">Текущее: 3 звезды в ряд</span>
+                </div>
+            </header>
+
+            <!-- Основной контейнер со звёздами -->
+            <div class="stars-container layout-3" id="starsContainer">
+                <!-- Звезда 1 -->
+                <div class="star-card" onclick="openStarModal(this)">
+                    <img src="../img/Stars/Star_1.jpg" class="star-image" loading="lazy" alt="">
+                </div>
+
+                <!-- Звезда 2 -->
+                <div class="star-card" onclick="openStarModal(this)">
+                    <img src="../img/Stars/Star_2.jpg" class="star-image" loading="lazy" alt="">
+                </div>
+
+                <!-- Звезда 3 -->
+                <div class="star-card" onclick="openStarModal(this)">
+                    <img src="../img/Stars/Star_3.jpg" class="star-image" loading="lazy" alt="">
+                </div>
+
+                <!-- Звезда 4 -->
+                <div class="star-card" onclick="openStarModal(this)">
+                    <img src="../img/Stars/Star_4.jpg" class="star-image" loading="lazy" alt="">
+                </div>
+
+                <!-- Звезда 5 -->
+                <div class="star-card" onclick="openStarModal(this)">
+                    <img src="../img/Stars/Star_5.jpg" class="star-image" loading="lazy" alt="">
+                </div>
+
+                <!-- Звезда 6 -->
+                <div class="star-card" onclick="openStarModal(this)">
+                    <img src="../img/Stars/Star_6.jpg" class="star-image" loading="lazy" alt="">
+                </div>
+
+                <!-- Звезда 7 -->
+                <div class="star-card" onclick="openStarModal(this)">
+                    <img src="../img/Stars/Star_7.jpg" class="star-image" loading="lazy" alt="">
+                </div>
+
+                <!-- Звезда 8 -->
+                <div class="star-card" onclick="openStarModal(this)">
+                    <img src="../img/Stars/Star_8.jpg" class="star-image" loading="lazy" alt="">
+                </div>
+
+                <!-- Звезда 9 -->
+                <div class="star-card" onclick="openStarModal(this)">
+                    <img src="../img/Stars/Star_9.jpg" class="star-image" loading="lazy" alt="">
+                </div>
+
+                <!-- Звезда 10 -->
+                <div class="star-card" onclick="openStarModal(this)">
+                    <img src="../img/Stars/Star_10.jpg" class="star-image" loading="lazy" alt="">
+                </div>
+
+                <!-- Звезда 11 -->
+                <div class="star-card" onclick="openStarModal(this)">
+                    <img src="../img/Stars/Star_11.jpg" class="star-image" loading="lazy" alt="">
+                </div>
+
+                <!-- Звезда 12 -->
+                <div class="star-card" onclick="openStarModal(this)">
+                    <img src="../img/Stars/Star_12.jpg" class="star-image" loading="lazy" alt="">
+                </div>
+
+                <!-- Звезда 13 -->
+                <div class="star-card" onclick="openStarModal(this)">
+                    <img src="../img/Stars/Star_13.jpg" class="star-image" loading="lazy" alt="">
+                </div>
+
+                <!-- Звезда 14 -->
+                <div class="star-card" onclick="openStarModal(this)">
+                    <img src="../img/Stars/Star_14.jpg" class="star-image" loading="lazy" alt="">
+                </div>
+
+                <!-- Звезда 15 -->
+                <div class="star-card" onclick="openStarModal(this)">
+                    <img src="../img/Stars/Star_15.jpg" class="star-image" loading="lazy" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal for full size image -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" class="modal-image" alt="Full size star">
+            <div id="modalCaption" class="modal-caption"></div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container_footer">
+            <div class="logo_div">
+                <a href="">
+                    <img src="../img/all/ava.png" width="80px" height="80px">
+                </a>
+            </div>
+
+            <div class="d-flex">
+                <div class="col">
+                    <div class="info_div">
+                        <h2>Information</h2>
+                        <ul class="item_menu">
+                            <li>
+                                <a href="" class="footer_link">(Future Link)</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer_link">(Future Link)</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer_link">(Future Link)</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer_link">(Future Link)</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="info_div">
+                        <h2>Information</h2>
+                        <ul class="item_menu">
+                            <li>
+                                <a href="" class="footer_link">(Future Link)</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer_link">(Future Link)</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer_link">(Future Link)</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer_link">(Future Link)</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="info_div">
+                        <h2>Information</h2>
+                        <ul class="item_menu">
+                            <li>
+                                <a href="" class="footer_link">(Future Link)</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer_link">(Future Link)</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer_link">(Future Link)</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer_link">(Future Link)</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="info_div">
+                        <h2>Information</h2>
+                        <ul class="item_menu">
+                            <li>
+                                <a href="" class="footer_link">(Future Link)</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer_link">(Future Link)</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer_link">(Future Link)</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer_link">(Future Link)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col_social">
+                    <h2>I'm here:</h2>
+                    <ul class="social_net">
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="../img/all/footer/VK.png" alt="VK Group">
+                                <p>VK Group</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="../img/all/footer/Telegram.png" alt="Telegram">
+                                <p>Telegram</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="../img/all/footer/Instagram.png" alt="Instagram"">
+                                <p>Instagram</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class=" social_link">
+                                <img src="../img/all/footer/Facebook.png" alt="Facebook">
+                                <p>Facebook</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/AirOwlin" class="social_link">
+                                <img src="../img/all/footer/Github.png" alt="GitHub">
+                                <p>GitHub</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="../img/all/footer/Twitter.png" alt="Twitter">
+                                <p>Twitter</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="../img/all/footer/Habr.png" alt="Habr">
+                                <p>Habr</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="../img/all/footer/Habr.png" alt="Habr">
+                                <p>Habr</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="../img/all/footer/Habr.png" alt="Habr">
+                                <p>Habr</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social_link">
+                                <img src="../img/all/footer/Habr.png" alt="Habr">
+                                <p>Habr</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyrights">
+                <div class="container_social">
+                    <ul class="social_copyrights">
+                        <li>
+                            <a href="">© 2022-2025 Air Owlin</a>
+                        </li>
+                        <li>
+                            <a href="">All rights reserved</a>
+                        </li>
+                        <li>
+                            <a href="">Terms</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- Script at the end (after loading the page)-->
+<script src="../js/OpenMenuBurger.js"></script>
+<script src="../js/scriptNY.js"></script>
+<script src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+<script src="../js/snow.js"></script>
+
+
+</html>

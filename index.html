@@ -16,8 +16,8 @@
     <title>Главная</title>
 </head>
 
-<body class="body_st">
-    <!-- Header -->
+<body>
+    <!-- Header (Mobile and PC version)-->
     <header class="header">
         <div class="container_header">
             <div class="header_body">
@@ -27,13 +27,13 @@
                     </a>
                 </div>
 
-                <div class="header_burger" onclick="OpenMenu()">
+                <div class="header_burger" onclick="toggleMenu()">
                     <span class="r1"></span>
                     <span class="r2"></span>
                     <span class="r3"></span>
                 </div>
 
-                <nav class="header_menu">
+                <nav class="header_menu" id="mainMenu">
                     <ul class="header_list">
                         <li>
                             <a href="index.html" class="header_link">Главная</a>
@@ -50,42 +50,16 @@
                         <li>
                             <a href="html/AboutMe.html" class="header_link">О разработчике</a>
                         </li>
-                        <!--
                         <li>
-                            <a href="html/HappyNewYear.html" class="coffee_a"><img src="img/all/Coffee.png"></a>
+                            <a href="html/Stars_NY.html" class="header_link">Звёздочки</a>
                         </li>
-                        -->
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+    
 
-    <!-- Area for view on mobile -->
-    <div class="burger_menu">
-        <ul class="burger_list">
-            <li>
-                <a href="index.html" class="burger_link">Главная</a>
-            </li>
-            <li>
-                <a href="html/News.html" class="burger_link">Новости</a>
-            </li>
-            <li>
-                <a href="html/Products.html" class="burger_link">Продукты</a>
-            </li>
-            <li>
-                <a href="html/Contact.html" class="burger_link">Контакты</a>
-            </li>
-            <li>
-                <a href="html/AboutMe.html" class="burger_link">О разработчике</a>
-            </li>
-            <!--
-            <li>
-                <a href="html/HappyNewYear.html" class="coffee_a"><img src="img/all/Coffee.png"></a>
-            </li>
-            -->
-        </ul>
-    </div>
 
     <!-- Content -->
     <div class="content">
@@ -151,6 +125,8 @@
         </div>
     </div>
 
+
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container_footer">
@@ -163,7 +139,7 @@
             <div class="d-flex">
                 <div class="col">
                     <div class="info_div">
-                        <h2>Информация</h2>
+                        <h2>Information</h2>
                         <ul class="item_menu">
                             <li>
                                 <a href="" class="footer_link">(Future Link)</a>
@@ -181,7 +157,7 @@
                     </div>
 
                     <div class="info_div">
-                        <h2>Информация</h2>
+                        <h2>Information</h2>
                         <ul class="item_menu">
                             <li>
                                 <a href="" class="footer_link">(Future Link)</a>
@@ -199,7 +175,7 @@
                     </div>
 
                     <div class="info_div">
-                        <h2>Информация</h2>
+                        <h2>Information</h2>
                         <ul class="item_menu">
                             <li>
                                 <a href="" class="footer_link">(Future Link)</a>
@@ -217,7 +193,7 @@
                     </div>
 
                     <div class="info_div">
-                        <h2>Информация</h2>
+                        <h2>Information</h2>
                         <ul class="item_menu">
                             <li>
                                 <a href="" class="footer_link">(Future Link)</a>
@@ -252,7 +228,7 @@
                         </li>
                         <li>
                             <a href="" class="social_link">
-                                <img src="img/all/footer/Instagram.png" alt="Instagram"">
+                                <img src="img/all/footer/Instagram.png" alt="Instagram">
                                 <p>Instagram</p>
                             </a>
                         </li>
@@ -306,7 +282,7 @@
                 <div class="container_social">
                     <ul class="social_copyrights">
                         <li>
-                            <a href="">© 2022-2023 Air Owlin</a>
+                            <a href="">© 2022-2025 Air Owlin</a>
                         </li>
                         <li>
                             <a href="">All rights reserved</a>
@@ -323,7 +299,8 @@
         </div>
     </footer>
 </body>
+
 <!-- Script at the end (after loading the page)-->
-<script src="js/OpenBurger.js"></script>
+<script src="js/OpenMenuBurger.js"></script>
 
 </html>

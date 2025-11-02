@@ -1,0 +1,278 @@
+/* =========== STARS PAGE STYLES =========== */
+/* Header section */
+.header_s {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header_s h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.description {
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.layout-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.layout-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.layout-info {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Stars container */
+.stars-container {
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Layout variations - КВАДРАТНЫЕ КАРТИНКИ */
+.stars-container.layout-2 {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stars-container.layout-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.stars-container.layout-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.stars-container.layout-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* Star card */
+.star-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    aspect-ratio: 1/1; /* Делаем карточку квадратной */
+}
+
+.star-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.star-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.star-card:hover::before {
+    opacity: 1;
+}
+
+/* КВАДРАТНЫЕ ИЗОБРАЖЕНИЯ */
+.star-image {
+    width: 100%;
+    height: 100%; /* Занимает всю высоту квадратной карточки */
+    object-fit: cover; /* Обрезаем изображение чтобы заполнить квадрат */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.star-card:hover .star-image {
+    transform: scale(1.05);
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    position: relative;
+    margin: 5% auto;
+    max-width: 90%;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-image {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain; /* В модальном окне показываем полное изображение */
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.modal-caption {
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 20px;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 1001;
+}
+
+.close:hover {
+    color: #ccc;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .stars-container.layout-5 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header_s h1 {
+        font-size: 2rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    
+    .controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .stars-container.layout-3,
+    .stars-container.layout-4,
+    .stars-container.layout-5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .modal-content {
+        margin: 10% auto;
+        max-width: 95%;
+    }
+    
+    .modal-caption {
+        font-size: 1.1rem;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stars-container {
+        grid-template-columns: 1fr !important;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .header_s h1 {
+        font-size: 1.8rem;
+    }
+    
+    .star-card {
+        aspect-ratio: 1/1; /* Сохраняем квадратную форму на мобильных */
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .modal-caption {
+        font-size: 1rem;
+    }
+    
+    .close {
+        top: 10px;
+        right: 15px;
+        font-size: 30px;
+    }
+}
+
+/* Дополнительные стили для лучшего отображения квадратов */
+.stars-container.layout-2 .star-card {
+    max-width: 400px;
+}
+
+.stars-container.layout-3 .star-card {
+    max-width: 300px;
+}
+
+.stars-container.layout-4 .star-card {
+    max-width: 250px;
+}
+
+.stars-container.layout-5 .star-card {
+    max-width: 200px;
+}
+
+/* Центрирование контента в квадратных карточках */
+.star-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
