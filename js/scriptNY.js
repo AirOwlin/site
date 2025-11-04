@@ -1,14 +1,20 @@
 // Функция открытия модального окна
-function openStarModal(starElement) {
+function openStarModal(containerElement) {
     const modal = document.getElementById('modal');
     const modalImage = document.getElementById('modalImage');
     const modalCaption = document.getElementById('modalCaption');
     
-    // Берем путь к изображению и alt из картинки внутри звезды
-    const img = starElement.querySelector('.star-image');
+    // Берем путь к изображению из картинки внутри контейнера
+    const img = containerElement.querySelector('.star-image');
+    
+    // Берем описание из подписи
+    const captionElement = containerElement.querySelector('.star-caption');
+    
     modalImage.src = img.src;
     modalImage.alt = img.alt;
-    modalCaption.textContent = img.alt;
+    
+    // Берем текст из подписи
+    modalCaption.textContent = captionElement.textContent;
     
     modal.style.display = 'block';
     document.body.style.overflow = 'hidden';
@@ -48,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('changeLayout').addEventListener('click', changeLayout);
     
     // Предотвращаем закрытие при клике на контент (если нужно)
-    document.querySelector('.modal-content').addEventListener('click', function(e) {
+    document.querySelector('.modal').addEventListener('click', function(e) {
         closeModal();
     });
     

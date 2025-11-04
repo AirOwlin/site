@@ -51,95 +51,157 @@
         <div class="container_page">
             
             <!-- Шапка с описанием -->
-            <header class="header_s">
+            <div class="header_description">
                 <h1>✨ Звёздное Небо ✨</h1>
                 <p class="description">
-                    Добро пожаловать на наше новогоднее звёздное небо!
+                    Добро пожаловать на наше новогоднее звёздное небо!<br>
+                    Всего звёзд: 15
+                </p>
+                <p class="description_addStar">
+                    Если Вы хотете, чтобы тут появилась Ваша звёздочка, то:<br>
+                    <span>
+                        1) Сначала нарисуйте от руки свою уникальную звёздочку на белом фоне размером 512х512px (готовые фигуры не использовать)<br>
+                    </span>
+                    <span>
+                        2) Сохраните файл в одном из раcширений: .jpg, .png, .psd<br>
+                    </span>
+                    <span>
+                        3) Отправьте файл на почту:<br>
+                        <strong>airowlin@astra-dev.online</strong><br>
+                        - Укажите тему: "Звёздочка"<br>
+                        - Укажите Ваше имя или не указывайте ничего, если хотите оставить Анонимно
+                    </span>
                 </p>
                 <div class="controls">
                     <button id="changeLayout" class="layout-btn">Изменить расположение</button>
                     <span class="layout-info">Текущее: 3 звезды в ряд</span>
                 </div>
-            </header>
+            </div>
 
             <!-- Основной контейнер со звёздами -->
             <div class="stars-container layout-3" id="starsContainer">
                 <!-- Звезда 1 -->
-                <div class="star-card" onclick="openStarModal(this)">
-                    <img src="../img/Stars/Star_1.jpg" class="star-image" loading="lazy" alt="">
+                <div class="star-container" onclick="openStarModal(this)">
+                    <div class="star-card">
+                         <img src="../img/Stars/Star_1.jpg" class="star-image" loading="lazy" alt="">
+                    </div>
+                    <p class="star-caption">1. Анонимно</p>
                 </div>
 
                 <!-- Звезда 2 -->
-                <div class="star-card" onclick="openStarModal(this)">
-                    <img src="../img/Stars/Star_2.jpg" class="star-image" loading="lazy" alt="">
+                <div class="star-container" onclick="openStarModal(this)">
+                    <div class="star-card">
+                         <img src="../img/Stars/Star_2.jpg" class="star-image" loading="lazy" alt="">
+                    </div>
+                    <p class="star-caption">2. Анонимно</p>
                 </div>
 
                 <!-- Звезда 3 -->
-                <div class="star-card" onclick="openStarModal(this)">
-                    <img src="../img/Stars/Star_3.jpg" class="star-image" loading="lazy" alt="">
+                <div class="star-container" onclick="openStarModal(this)">
+                    <div class="star-card">
+                         <img src="../img/Stars/Star_3.jpg" class="star-image" loading="lazy" alt="">
+                    </div>
+                    <p class="star-caption">3. Анонимно</p>
                 </div>
 
                 <!-- Звезда 4 -->
-                <div class="star-card" onclick="openStarModal(this)">
-                    <img src="../img/Stars/Star_4.jpg" class="star-image" loading="lazy" alt="">
+                <div class="star-container" onclick="openStarModal(this)">
+                    <div class="star-card">
+                         <img src="../img/Stars/Star_4.png" class="star-image" loading="lazy" alt="">
+                    </div>
+                    <p class="star-caption">4. Анонимно</p>
                 </div>
 
                 <!-- Звезда 5 -->
-                <div class="star-card" onclick="openStarModal(this)">
-                    <img src="../img/Stars/Star_5.jpg" class="star-image" loading="lazy" alt="">
+                <div class="star-container" onclick="openStarModal(this)">
+                    <div class="star-card">
+                         <img src="../img/Stars/Star_5.jpg" class="star-image" loading="lazy" alt="">
+                    </div>
+                    <p class="star-caption">5. Анонимно</p>
                 </div>
 
                 <!-- Звезда 6 -->
-                <div class="star-card" onclick="openStarModal(this)">
-                    <img src="../img/Stars/Star_6.jpg" class="star-image" loading="lazy" alt="">
+                <div class="star-container" onclick="openStarModal(this)">
+                    <div class="star-card">
+                         <img src="../img/Stars/Star_6.jpg" class="star-image" loading="lazy" alt="">
+                    </div>
+                    <p class="star-caption">6. Анонимно</p>
                 </div>
 
                 <!-- Звезда 7 -->
-                <div class="star-card" onclick="openStarModal(this)">
-                    <img src="../img/Stars/Star_7.jpg" class="star-image" loading="lazy" alt="">
+                <div class="star-container" onclick="openStarModal(this)">
+                    <div class="star-card">
+                         <img src="../img/Stars/Star_7.png" class="star-image" loading="lazy" alt="">
+                    </div>
+                    <p class="star-caption">7. Анонимно</p>
                 </div>
 
                 <!-- Звезда 8 -->
-                <div class="star-card" onclick="openStarModal(this)">
-                    <img src="../img/Stars/Star_8.jpg" class="star-image" loading="lazy" alt="">
+                <div class="star-container" onclick="openStarModal(this)">
+                    <div class="star-card">
+                         <img src="../img/Stars/Star_8.png" class="star-image" loading="lazy" alt="">
+                    </div>
+                    <p class="star-caption">8. Анонимно</p>
                 </div>
 
                 <!-- Звезда 9 -->
-                <div class="star-card" onclick="openStarModal(this)">
-                    <img src="../img/Stars/Star_9.jpg" class="star-image" loading="lazy" alt="">
+                <div class="star-container" onclick="openStarModal(this)">
+                    <div class="star-card">
+                         <img src="../img/Stars/Star_9.png" class="star-image" loading="lazy" alt="">
+                    </div>
+                    <p class="star-caption">9. Анонимно</p>
                 </div>
 
                 <!-- Звезда 10 -->
-                <div class="star-card" onclick="openStarModal(this)">
-                    <img src="../img/Stars/Star_10.jpg" class="star-image" loading="lazy" alt="">
+                <div class="star-container" onclick="openStarModal(this)">
+                    <div class="star-card">
+                         <img src="../img/Stars/Star_10.png" class="star-image" loading="lazy" alt="">
+                    </div>
+                    <p class="star-caption">10. Анонимно</p>
                 </div>
 
                 <!-- Звезда 11 -->
-                <div class="star-card" onclick="openStarModal(this)">
-                    <img src="../img/Stars/Star_11.jpg" class="star-image" loading="lazy" alt="">
+                <div class="star-container" onclick="openStarModal(this)">
+                    <div class="star-card">
+                         <img src="../img/Stars/Star_11.jpg" class="star-image" loading="lazy" alt="">
+                    </div>
+                    <p class="star-caption">11. Анонимно</p>
                 </div>
 
                 <!-- Звезда 12 -->
-                <div class="star-card" onclick="openStarModal(this)">
-                    <img src="../img/Stars/Star_12.jpg" class="star-image" loading="lazy" alt="">
+                <div class="star-container" onclick="openStarModal(this)">
+                    <div class="star-card">
+                         <img src="../img/Stars/Star_12.png" class="star-image" loading="lazy" alt="">
+                    </div>
+                    <p class="star-caption">12. Анонимно</p>
                 </div>
 
                 <!-- Звезда 13 -->
-                <div class="star-card" onclick="openStarModal(this)">
-                    <img src="../img/Stars/Star_13.jpg" class="star-image" loading="lazy" alt="">
+                <div class="star-container" onclick="openStarModal(this)">
+                    <div class="star-card">
+                         <img src="../img/Stars/Star_13.png" class="star-image" loading="lazy" alt="">
+                    </div>
+                    <p class="star-caption">13. Анонимно</p>
                 </div>
 
                 <!-- Звезда 14 -->
-                <div class="star-card" onclick="openStarModal(this)">
-                    <img src="../img/Stars/Star_14.jpg" class="star-image" loading="lazy" alt="">
+                <div class="star-container" onclick="openStarModal(this)">
+                    <div class="star-card">
+                         <img src="../img/Stars/Star_14.png" class="star-image" loading="lazy" alt="">
+                    </div>
+                    <p class="star-caption">14. Артур Подъяпольский</p>
                 </div>
 
                 <!-- Звезда 15 -->
-                <div class="star-card" onclick="openStarModal(this)">
-                    <img src="../img/Stars/Star_15.jpg" class="star-image" loading="lazy" alt="">
+                <div class="star-container" onclick="openStarModal(this)">
+                    <div class="star-card">
+                         <img src="../img/Stars/Star_15.png" class="star-image" loading="lazy" alt="">
+                    </div>
+                    <p class="star-caption">15. Анонимно</p>
                 </div>
-            </div>
 
+
+            </div>
         </div>
     </div>
 
@@ -327,11 +389,11 @@
     </footer>
 </body>
 
-<!-- Script at the end (after loading the page)-->
+<!-- Script at the end (after loading the page) -->
 <script src="../js/OpenMenuBurger.js"></script>
 <script src="../js/scriptNY.js"></script>
-<script src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
-<script src="../js/snow.js"></script>
+<!--<script src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+<script src="../js/snow.js"></script>-->
 
 
 </html>

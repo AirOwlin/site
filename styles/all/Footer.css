@@ -185,7 +185,7 @@
         align-items: center;
     }
 
-    .info_div:not(:first-child) {
+    .info_div {
         padding-top: 15px;
     }
 
