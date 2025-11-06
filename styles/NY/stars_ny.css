@@ -20,6 +20,12 @@
     margin: 0 auto 30px;
 }
 
+.description_date_update {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
 .description_addStar {
     color: white;
     background: rgb(2, 24, 49);
